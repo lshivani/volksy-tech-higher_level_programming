@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 for ch in range(97, 124):
-    print(str(ch))
+    print('{}'.format(ch))
