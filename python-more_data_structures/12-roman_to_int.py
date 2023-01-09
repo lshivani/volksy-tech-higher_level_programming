@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# 12-roman_to_int.py
-# Brennan D Baraban <375@holbertonschool.com>
 def roman_to_int(roman_string):
     if (not isinstance(roman_string, str) or
             roman_string is None):
