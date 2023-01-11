@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ 2-Square """
 
+
 class Square:
     """ Size = 0 """
     def __init__(self, size = 0):
