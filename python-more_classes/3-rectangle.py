@@ -60,4 +60,4 @@ class Rectangle:
                 stringrep += "#"
             if row < self.__height - 1:
                 stringrep += "\n"
-        return 
+        return stringrep 
