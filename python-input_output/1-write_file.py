@@ -2,10 +2,7 @@
 """ write file"""
 
 
-def number_of_lines(filename=""):
+def write_file(filename=""):
     """ lines count """
-    count = 0
-    with open(filename, encoding='utf-8')as file:
-        for line in file:
-            count =+ 1
-    return count
+    with open(filename,'w', encoding='utf-8')as file:
+        return file.write(text)
