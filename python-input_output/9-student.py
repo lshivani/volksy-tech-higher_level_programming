@@ -2,7 +2,7 @@
 """ creates class name"""
 
 
-class student:
+class Student:
     """class """
 
 
