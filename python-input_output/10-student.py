@@ -4,16 +4,15 @@
 
 class Student:
     """A class named Student"""
-
     def __init__(self, first_name, last_name, age):
         """Initializes an instance"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
-    
-    def to_json(self,attrs=None):
-        """ retrives"""
-        if type(attrs) is list and all(type(x)) is str for x in attrs):
+
+    def to_json(self, attrs=None):
+        """Retrieves dictionary representation of student"""
+        if type(attrs) is list and all(type(x) is str for x in attrs):
             dictionary = {}
             for i in attrs:
                 if i in self.__dict__:
