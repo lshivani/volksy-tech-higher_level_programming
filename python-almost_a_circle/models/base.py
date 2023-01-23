@@ -45,3 +45,39 @@ class Base:
 
         with open(filename, mode='w', encoding='utf-8') as f:
             f.write(cls.to_json_string(dicList))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        Returns a list of the JSON string representation.
+        """
+        if json_string is None or (len(json_string) == 0):
+            return([])
+        return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        Returns an instance with all attributes already
+        set.
+        """
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1, 0, 0, 'a')
+        if cls.__name__ == "Square":
+            dummy = cls(1, 0, 0, 'b')
+        dummy.update(**dictionary)
+        return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """returns a list of instances from a .json file"""
+        filename = cls.__name__ + ".json"
+        try:
+            with open(filename, mode='r', encoding='utf-8') as f:
+                json_string = f.read()
+                dicList = []
+                for obj in cls.from_json_string(json_string):
+                    dicList.append(cls.create(**obj))
+        except:
+            dicList = []
+        return dicList
