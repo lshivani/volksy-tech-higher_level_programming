@@ -75,6 +75,7 @@ class Base:
             object = cls(1, 1)
             object.update(**dictionary)
             return object
+
         if cls.__name__ == "Square":
             object = cls(1)
             object.update(**dictionary)
