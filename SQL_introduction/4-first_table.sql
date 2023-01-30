@@ -1,4 +1,5 @@
 -- create table
 CREATE TABLE IF NOT EXISTS first_table(
-	id INT DEFAULT NOT NULL,
-	name VARCHAR(256));
+	id INT DEFAULT NULL,
+	name VARCHAR(256)
+	);
