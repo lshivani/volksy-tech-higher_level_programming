@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+""" conneting"""
+
+
 import sys
 import MySQLdb
 
