@@ -10,7 +10,7 @@ if __name__ == "__main__":
     c = conn.cursor()
     c.execute("SELECT cities.name from cities" +
               " INNER JOIN states ON cities.state_id = state.id" +
-              " WHERE states.name = %s ORDER BY cities.id ASC",[sys.argv[4]])
+              " WHERE states.name = %s ORDER BY cities.id ASC", [sys.argv[4]])
     a = c.fetchall()
     for i in a:
         print(",".join[0])
