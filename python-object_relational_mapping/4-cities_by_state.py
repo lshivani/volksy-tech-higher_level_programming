@@ -9,8 +9,8 @@ if __name__ == "__main__":
                            passwd=sys.argv[2], db=sys.argv[3], charset="utf8")
     c = conn.cursor()
     c.execute("SELECT cities.id, cities.name, states.name from cities" +
-              "INNER JOIN states ON cities.states_id = states.id ORDER BY" +
-              "cities.id ASC")
+              " INNER JOIN states ON cities.states_id = states.id ORDER BY" +
+              " cities.id ASC")
     a = c.fetchall()
     for i in a:
         print(i)
