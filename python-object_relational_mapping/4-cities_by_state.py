@@ -11,7 +11,7 @@ if __name__ == "__main__":
     c.execute("SELECT cities.id, cities.name, states.name from cities" +
               "INNER JOIN states ON cities.states_id = states.id ORDER BY" +
               "cities.id ASC")
-    a = c.fectchall()
+    a = c.fetchall()
     for i in a:
         print(i)
     c.close()
