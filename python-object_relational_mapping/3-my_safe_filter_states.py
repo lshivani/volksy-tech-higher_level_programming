@@ -9,7 +9,7 @@ if __name__ == "__main__":
     c = conn.cursor()
     c.execute("SELECT * FROM states WHERE name = %s ORDER BY id ASC",[sys.argv[4]])
             a = c.fetchall()
-            for i in c:
+            for i in a:
                 print()
             c.close()
             conn.close()
