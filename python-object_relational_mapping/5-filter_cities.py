@@ -12,6 +12,6 @@ if __name__ == "__main__":
               " INNER JOIN states ON cities.state_id = states.id" +
               " WHERE states.name = %s ORDER BY cities.id ASC", [sys.argv[4]])
     a = c.fetchall()
-    print(",".join([i[0] for i in a]))
+    print(", ".join([i[0] for i in a]))
     c.close()
     conn.close()
