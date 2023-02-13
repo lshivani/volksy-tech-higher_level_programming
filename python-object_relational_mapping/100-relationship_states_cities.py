@@ -3,6 +3,8 @@
 # Usage: ./101-relationship_states_cities_list.py <mysql username> /
 #                                                 <mysql password> /
 #                                                 <database name>
+
+
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
