@@ -17,5 +17,5 @@ if __name__ == "__main__":
             State.id).first().id), end="")
         print(session.query(State).order_by(State.id).first().name)
     except:
-        print("Nothing")
+           print("Nothing")
     session.close()
