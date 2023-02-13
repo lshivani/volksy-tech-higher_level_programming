@@ -66,6 +66,3 @@ def matrix_mul(m_a, m_b):
         new_matrix.append(new_row)
 
     return new_matrix
-
-                                                                              69,0-1        Bot
-
