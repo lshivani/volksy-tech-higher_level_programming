@@ -4,7 +4,7 @@ function factorial (a) {
   if (isNaN(number)) {
     return 1;
   }
-  if (a == 0) {
+  if (a === 0) {
     return 1;
   }
   return a * factorial(number - 1);
