@@ -1,1 +1,1 @@
-javascript objects ,scope
+javascript objects
