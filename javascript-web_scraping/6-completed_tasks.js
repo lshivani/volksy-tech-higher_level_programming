@@ -1,8 +1,6 @@
 #!/usr/bin/node
-
 const requests = require('request');
 const url = process.argv[2];
-
 requests.get(url, function (error, response, body) {
   if (error) {
     console.log(error);
@@ -18,4 +16,4 @@ requests.get(url, function (error, response, body) {
     return accumulator;
   }, {});
   console.log(users);
-})
+});
