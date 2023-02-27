@@ -15,4 +15,3 @@ request(filmsURL, function (error, response, body) {
     });
   }
 });
-
